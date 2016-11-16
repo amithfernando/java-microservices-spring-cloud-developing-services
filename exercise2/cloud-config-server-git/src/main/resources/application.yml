@@ -1,0 +1,21 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/ksbrwsk/spring-cloud-config-repo
+          #username: abc
+          #password: abc
+          search-paths:
+            - 'station*'
+security:
+  basic:
+    enabled: true
+  user:
+    name: exercise2
+    password: exercise2

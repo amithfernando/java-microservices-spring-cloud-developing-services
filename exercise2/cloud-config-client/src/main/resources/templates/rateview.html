@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pluralsight Training: Config Client</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h1>Exercise2: Spring Cloud Config Client</h1>
+        <p th:text="'Your rate is: ' + ${rateamount}" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+            <p th:text="'Number of lanes is ' + ${lanes}"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+            <p th:text="'Toll start time is ' + ${tollstart}"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+            <p th:text="'Toll stop time is ' + ${tollstop}"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+            <p th:text="'Connection string is ' + ${connstring}"/>
+    </div>
+</div>
+</body>
+</html>
